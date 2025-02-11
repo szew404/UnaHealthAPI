@@ -15,7 +15,9 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Internal
+    "modules.utils",
     "modules.api",
+    "modules.tasks",
     # External
     "rest_framework",
     "drf_spectacular",
@@ -42,6 +44,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 WSGI_APPLICATION = "config.wsgi.application"
 
