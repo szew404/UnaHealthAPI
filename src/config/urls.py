@@ -29,6 +29,5 @@ urlpatterns = [
         name="redoc",
     ),
     # Including a new module
-    path("auth/", include("modules.authentication.urls")),
-    # path("api/", include("modules.api.urls")),
+    path("api/v1/", include("modules.api.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
