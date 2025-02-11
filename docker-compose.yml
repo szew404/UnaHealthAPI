@@ -4,7 +4,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file:
-      - .env.prod
+      - .env
     environment:
       POSTGRES_DB: ${NAME_DB}
       POSTGRES_USER: ${USER_DB}
@@ -20,11 +20,10 @@ services:
     command: python src/bin/manage.py runserver 0.0.0.0:8000
     volumes:
       - .:/app
-      - ./src/config/.env.prod:/app/src/.env.prod
     ports:
       - 8000:8000
     env_file:
-      - .env.prod
+      - .env
     environment:
       POSTGRES_DB: ${NAME_DB}
       POSTGRES_USER: ${USER_DB}
@@ -40,7 +39,7 @@ services:
       volumes:
         - .:/app
       env_file:
-        - .env.prod
+        - .env
       environment:
         - CELERY_BROKER_URL=${CELERY_BROKER_URL}
         - CELERY_RESULT_BACKEND=${CELERY_RESULT_BACKEND}
