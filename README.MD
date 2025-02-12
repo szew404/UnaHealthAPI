@@ -4,7 +4,9 @@
 API for Una Health coding challenge
 
 
-## API url
+## API Documentation
+
+  https://unahealthapi.onrender.com/api/schema/swagger-ui/
 
 
 ## Installation to run locally
@@ -67,4 +69,13 @@ Access to a new terminal, then migrate and collecstatic using djpro https://djpr
   djpro man makemigrations
   djpro man migrate
   djpro man collecstatic
+```
+
+## Run tests
+
+Access to a new terminal and run
+
+```bash
+  docker exec -it unahealthapi-web-1 bash
+  pytest
 ```
