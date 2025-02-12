@@ -54,7 +54,7 @@ Run the project using Docker Compose
   docker compose up --build
 ```
 
-Access to a new terminal and make migrations using djpro https://djpro.readthedocs.io/en/latest/
+Access to a new terminal, then migrate and collecstatic using djpro https://djpro.readthedocs.io/en/latest/
 
 ```bash
   docker exec -it unahealthapi-web-1 bash
@@ -63,4 +63,5 @@ Access to a new terminal and make migrations using djpro https://djpro.readthedo
 ```bash
   djpro man makemigrations
   djpro man migrate
+  djpro man collecstatic
 ```
