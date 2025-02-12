@@ -13,8 +13,9 @@ import os
     request=CSVUploadSerializer,
 )
 @api_view(["POST"])
-def upload_csv_file(request):
+def upload_csv_file(request) -> Response:
     """POST to upload a csv file"""
+
     serializer = CSVUploadSerializer(data=request.data, context={"request": request})
 
     if not serializer.is_valid():

@@ -50,7 +50,7 @@ class GlucoseListView(generics.ListAPIView):
 
 
 @api_view(["GET"])
-def get_task_status(request, task_id):
+def get_task_status(request, task_id: str) -> Response:
     """GET to check the status of a task"""
     task_result = AsyncResult(task_id)
     result = {

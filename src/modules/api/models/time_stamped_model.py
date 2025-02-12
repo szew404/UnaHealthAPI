@@ -1,3 +1,7 @@
+# Part of this code belongs to https://github.com/DarrenRiedlinger/glucose-tracker
+# Changes and modifications were made to the technical
+# requirements of the UnaHealthAPI coding challenge.
+
 from django.db import models
 
 
