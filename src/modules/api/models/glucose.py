@@ -23,8 +23,8 @@ class GlucoseManager(models.Manager):
 
 class Glucose(TimeStampedModel):
     user_id = models.CharField("User ID", max_length=40, blank=False, null=False)
-    record_date = models.DateField("Date")
-    record_time = models.TimeField("Time")
+    record_date = models.DateField("Date", blank=False, null=False)
+    record_time = models.TimeField("Time", blank=False, null=False)
     glucose_value = models.IntegerField("Glucose Value mg/dL", blank=False, null=False)
 
     def __unicode__(self):
@@ -32,3 +32,4 @@ class Glucose(TimeStampedModel):
 
     class Meta:
         ordering = ["-record_date", "-record_time"]
+        app_label = "api"
