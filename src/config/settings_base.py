@@ -15,9 +15,10 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Internal
-    "modules.utils",
     "modules.api",
+    "modules.utils",
     "modules.tasks",
+    "modules.services",
     # External
     "rest_framework",
     "drf_spectacular",
