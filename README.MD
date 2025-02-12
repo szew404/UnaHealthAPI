@@ -23,7 +23,7 @@ DJANGO_ENV=prod
 Create a new .env file in the root directory and include the following variables.
 
 ```bash
-    SECRET_KEY='v$1y@d4u843#es4z+3j!%5i$gav2d@e%94h27mxq6ot&j)c-5-'
+    DJANGO_SECRET_KEY='v$1y@d4u843#es4z+3j!%5i$gav2d@e%94h27mxq6ot&j)c-5-'
     DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1] 0.0.0.0 testserver
 
     # PostgreSQL
