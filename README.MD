@@ -75,6 +75,14 @@ Access to a new terminal, then migrate and collecstatic using djpro https://djpr
   djpro man collecstatic
 ```
 
+If the migrations do not work you can try the following:
+
+```bash
+  python src/bin/manage.py makemigrations api
+  python src/bin/manage.py migrate api
+```
+
+
 ## API Documentation locally
 
   http://127.0.0.1:8000/api/schema/swagger-ui/
