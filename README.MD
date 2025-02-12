@@ -4,9 +4,19 @@
 API for Una Health coding challenge
 
 
-## API Documentation
+## Chosen software architecture
 
-  https://unahealthapi.onrender.com/api/schema/swagger-ui/
+- Django REST Framework (DRF)
+- Docker (with services for app, DB, and Celery)
+- PostgreSQL
+- Render for remote deployment
+
+If I had more time, I would improve the following:
+
+- Export feature
+- Online deployment. Failed at https://unahealthapi.onrender.com/
+- Documentation using ReadTheDocs
+- Testing
 
 
 ## Installation to run locally
@@ -17,12 +27,6 @@ Clone the repository
     mkdir unahealthAPI
     cd unahealthAPI
     git clone https://github.com/szew404/UnaHealthAPI.git .
-```
-
-Create a new .env.conf file inside /src/config/ and add:
-
-```bash
-DJANGO_ENV=prod
 ```
 
 Create a new .env file in the root directory and include the following variables.
@@ -70,6 +74,10 @@ Access to a new terminal, then migrate and collecstatic using djpro https://djpr
   djpro man migrate
   djpro man collecstatic
 ```
+
+## API Documentation locally
+
+  http://127.0.0.1:8000/api/schema/swagger-ui/
 
 ## Run tests
 
