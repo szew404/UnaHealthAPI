@@ -27,6 +27,8 @@ class GlucoseManager(models.Manager):
 
 
 class Glucose(TimeStampedModel):
+    objects = GlucoseManager()
+
     user_id = models.CharField("User ID", max_length=40, blank=False, null=False)
     record_date = models.DateField("Date", blank=False, null=False)
     record_time = models.TimeField("Time", blank=False, null=False)
