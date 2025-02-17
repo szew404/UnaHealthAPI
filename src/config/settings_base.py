@@ -22,6 +22,7 @@ INSTALLED_APPS = [
     # External
     "rest_framework",
     "drf_spectacular",
+    "django_filters",
 ]
 
 # Docs config
