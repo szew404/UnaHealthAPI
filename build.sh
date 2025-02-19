@@ -11,5 +11,6 @@ python src/bin/manage.py collectstatic --no-input
 # Apply any outstanding database migrations
 python src/bin/manage.py migrate
 
-# Apply any outstanding database migrations
+# Apply any outstanding api migrations
+python src/bin/manage.py makemigrations api
 python src/bin/manage.py migrate api
