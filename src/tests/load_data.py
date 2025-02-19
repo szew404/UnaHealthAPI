@@ -4,7 +4,7 @@
 import os
 import requests
 
-url = "http://localhost:8000/api/v1/upload-csv/"
+url = "https://unahealthapi.onrender.com/api/v1/upload-csv/"
 
 sample_data_dir = "src/tests/sample-data"
 
