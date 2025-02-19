@@ -5,7 +5,7 @@ import environ
 
 env = environ.Env(
     # default value
-    DEBUG=(bool, False),
+    DEBUG=(bool, True),
 )
 
 ENV_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
